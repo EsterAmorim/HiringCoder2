@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/page-icon.ico">
+    <!--Custom style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css">
+    <!--font awesome icon cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--script light slider-->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/lightslider.js"></script>
+    <title>Lonely Lonely Store</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-responsive">
+                <img src="assets/images/logo.png" alt="img" class="logo" id="logo">
+                <div class="access">
+                    <a href="#" id="notification"><i class="fa fa-bell"></i></a>
+                    <a href="#" id="cart"><i class="fa fa-shopping-cart"></i></a>
+                    <a href="#" id="bars"><i class="fa fa-bars"></i></a>
+                    <a href="#" id="account"><i class="fa fa-user-circle-o"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end header-->
+    <div id="main">
+        <section class="slider">
+            <!--start slider-->
+            <ul id="autoWidth" class="cs-hidden">
+                <!--001-->
+                <li class="item-a">
+                    <!--box-slide-->
+                    <div class="box">
+                        <div class="slide-img">
+                            <img src="assets/images/goods1.png" alt="0">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn" id="add-to-cart">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type" id="name">
+                                <a href="#">O Pequeno Principe</a>
+                                <span>Antone De Saint-Exupéry</span>
+                            </div>
+                            <a href="#" class="price" id="price">R$15</a>
+                        </div>
+                    </div>
+                </li>
+                <!--002-->
+                <li class="item-b">
+                    <div class="box">
+                        <!--box-slider-->
+                        <div class="slide-img">
+                            <img src="assets/images/goods2.png" alt="1">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">Visões Noturnas</a>
+                                <span>Maurício Caldeira</span>
+                            </div>
+                            <a href="#" class="price">R$25</a>
+                        </div>
+                    </div>
+                </li>
+                <!--003-->
+                <li class="item-c">
+                    <div class="box">
+                        <!--box-slider-->
+                        <div class="slide-img">
+                            <img src="assets/images/goods3.png" alt="2">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">Guerra Civil</a>
+                                <span>Stuart Moore</span>
+                            </div>
+                            <a href="#" class="price">R$20</a>
+                        </div>
+                    </div>
+                </li>
+                <!--004-->
+                <li class="item-d">
+                    <div class="box">
+                        <!--box-slider-->
+                        <div class="slide-img">
+                            <img src="assets/images/goods4.png" alt="3">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">Lendas Sagradas</a>
+                                <span>Gilson Pinheiro</span>
+                            </div>
+                            <a href="#" class="price">R$20</a>
+                        </div>
+                    </div>
+                </li>
+                <!--005-->
+                <li class="item-e">
+                    <div class="box">
+                        <!--box-slider-->
+                        <div class="slide-img" id="img">
+                            <img src="assets/images/goods5.png" alt="4">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">O Pecado de Christine</a>
+                                <span>Benjamin Black</span>
+                            </div>
+                            <a href="#" class="price">R$25</a>
+                        </div>
+                    </div>
+                </li>
+                <!--006-->
+                <li class="item-f">
+                    <div class="box">
+                        <!--box-slider-->
+                        <div class="slide-img">
+                            <img src="assets/images/goods6.png" alt="5">
+                            <div class="overlay">
+                                <a href="#form" class="buy-btn">Compre Agora</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="#">O Chamado do Monstro</a>
+                                <span>Patrick Ness</span>
+                            </div>
+                            <a href="#" class="price">R$54</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!--end slider-->
+        <!--start form-->
+        <div id="form">
+            <form action="">
+                <h4 class="title"> Cadastre-se</h4>
+                <label id="labelName" for="username">Nome</label>
+                <div class="input">
+                    <i class="fas fa-user"></i>
+                    <input id="username" name="username" placeholder="Nome" type="text">
+                </div>
+                <label id="labelEmail" for="email">Email</label>
+                <div class="input">
+                    <i class="fas fa-envelope"></i>
+                    <input id="email" name="email" placeholder="Email" type="email" onblur="validateEmail()"
+                        onfocus="resetMsg()">
+                    <span id="error-email"></span>
+                </div>
+                <label id="labelAddress" for="address">Endereço</label>
+                <div class="input">
+                    <input id="address" name="address" placeholder="Endereço" type="text">
+                </div>
+                <div id="btn">
+                    <button onclick='register()'>Inscrever-se</button>
+                </div>
+            </form>
+        </div>
+        <!--end form-->
+        <div id="form">
+            <form action="">
+                <h4 class="title">Escolha seu Livro</h4>
+                <label id="labelbook" for="bookname">Livro</label>
+                <select id="bookname" name="bookname">
+                    <option>O Pequeno Principe cod: 0</option>
+                    <option>Visões Nortunas cod: 1</option>
+                    <option>Guerra Civil cod: 2</option>
+                    <option>Lendas Sagradas cod: 3</option>
+                    <option>O Pecado de Christine cod: 4</option>
+                    <option>O Chamado do Monstro cod: 5</option>
+                </select>
+                <label id="labelamount" for="bookamount">Quantidade</label>
+                <input id="bookamount" name="bookamount" placeholder="Quantidade" type="number">
+                <label id="labelcod" for="bookcod">Insira o Código do livro</label>
+                <input id="bookcod" name="bookcod" placeholder="Código do livro" type="number">
+                <div id="btn">
+                    <button onclick='shop()'>Enviar</button>
+                </div>
+            </form>
+        </div>
+        <!--start footer section-->
+        <footer>
+            <p id="footer-title">Nosso Time de Apoio</p>
+            <div class="footer">
+                <div class="support">
+                    <ul>
+                        <h3>Saiba Sobre Nós</h3>
+                        <li><a href="#" id="about">Sobre nós</a></li>
+                        <li><a href="#" id="refund-policy">Politica de Reembolso</a></li>
+                        <li><a href="#" id="policy">Nossa Politica</a></li>
+                        <li><a href="#" id="return-product">Como devolver?</a></li>
+                        <li><a href="#" id="termos">Termos & Condições</a></li>
+                        <li><a href="#" id="privacy">Politica de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <h3>Contato</h3>
+                        <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/ester-a-353467181/"
+                                id="linkedin" target="_blank"> LinkedIn</a></li>
+                        <li><i class="fa fa-github"><a href="https://github.com/EsterAmorim/HiringCoders2.git"
+                                    id="github" target="_blank"> GitHub</a></i></li>
+                        <li><i class="fa fa-instagram"><a href="https://www.instagram.com/mortadela_frita/"
+                                    id="instagram" target="_blank"> Instagram</a></i></li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h3>Endereço do Escritório</h3>
+                    <p>Prédio dos Que Já Foram, Rua dos Perdidos,</p>
+                    <p>Alzheimer,10406-176,</p>
+                    <p>Esquecidolandia, Brasil</p>
+                    <p>Telefone: (66) 612134340 </p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&#169 2021 lonelylonelystore.com Todos os Direitos Reservados</p>
+            </div>
+        </footer>
+        <!--end footer-->
+    </div>
+    <!--end main section-->
+
+
+    <!--Icon form-->
+    <script src="https://kit.fontawesome.com/dacdce5bda.js" crossorigin="anonymous"></script>
+    <!--Custom Script-->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
